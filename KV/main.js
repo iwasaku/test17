@@ -911,7 +911,8 @@ phina.define("GameScene", {
             // FALLTHRU
             case GAME_MODE.END_INIT:
                 {
-                    let postText = ("KV [" + gameLevel.text + "]\n"
+                    let postText = ("KV \n"
+                        + "LEVEL:" + gameLevel.text + "\n"
                         + this.scoreLabel.text.replace(/\s+/g, '') + "\n"
                         + this.perfectLabel.text.replace(/\s+/g, '') + "\n"
                         + this.greatLabel.text.replace(/\s+/g, '') + "\n"
